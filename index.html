@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Covid Web-App</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="covid-icon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Selecao - v4.3.0
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html">Covid Tracker</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">World Update </a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Search Country</a></li>
+          <li><a class="nav-link scrollto " href="#testimonials">Search Indian State</a></li>
+         
+          
+          
+          <li><a class="nav-link scrollto" href="#pricing">Precuations</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Covid Tracker</span></h2>
+          <p class="animate__animated fanimate__adeInUp">A website made with the purpose of Covid tracking.</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">What is Coronavirus?</h2>
+          <p class="animate__animated animate__fadeInUp">Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+            <br>
+            <br>Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Stopping the spread starts with you</h2>
+          <p class="animate__animated animate__fadeInUp">Wear a mask.
+            <br>Clean your hands.
+            <br>Maintain safe distance.
+            <br>Get vaccinated.
+            <br>Stay Home ! Stay Safe </p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>About</h2>
+          <p>What is this website for?</p>
+        </div>
+
+        <div class="row content" data-aos="fade-up">
+          
+            <p>
+              We are living in an era in which Coronavirus is spreading rapidly across the globe.
+        Seeing the present day scenario,it is highly advised to keep the track of covid cases.
+        This website serves the purpose of covid tracking.
+        
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i>Get World Live Update of Covid-19</li>
+              
+              <li><i class="ri-check-double-line"></i>Get covid Data of any Country</li>
+              
+              <li><i class="ri-check-double-line"></i>Get covid Data of any State</li>
+            </ul>
+          
+          
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-out">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Covid-19 Helpline Number</h3>
+            <p> If someone is showing any of these signs, seek emergency medical care immediately:
+
+              <br> ->Trouble breathing
+              <br> ->Persistent pain or pressure in the chest
+              <br> ->New confusion
+              <br> ->Inability to wake or stay awake
+              <br> ->Pale, gray, or blue-colored skin, lips, or nail beds, depending on skin tone</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" ><br>Helpline Number: +91-11-23978046
+              <br>Toll Free: 1075
+              <br>Helpline Email ID: ncov2019@gov.in</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          
+            
+              <h2><i class="bi bi-globe" style="color: #081588;"></i><b>World Live Covid-19 Update</h2>
+          </div>
+          
+          
+        
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="zoom-in-left" style="background-color: darkturquoise;">
+              
+              <h4 class="title"><a href="">Total Confirmed Cases</a></h4>
+              <p class="description" id="TotalConfirmed"></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5 mt-md-0" >
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="100"style="background-color: gold;">
+              
+              <h4 class="title"><a href="">New Confirmed Cases</a></h4>
+              <p class="description" id="NewConfirmed"></p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 " >
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200" style="background-color: greenyellow;">
+              
+              <h4 class="title"><a href="">Total Deaths</a></h4>
+              <p class="description" id="TotalDeaths"></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5" >
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="300" style="background-color: red;">
+              
+              <h4 class="title"><a href="">New Deaths</a></h4>
+              <p class="description" id="NewDeaths"></p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-5" >
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="400" style="background-color: salmon;">
+              
+              <h4 class="title"><a href="">Total Recovered</a></h4>
+              <p class="description" id="TotalRecovered"></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5" >
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="500" style="background-color: violet;">
+              
+              <h4 class="title"><a href="">New Recovered</a></h4>
+              <p class="description" id="NewRecovered"></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Let's Track Covid-19 data </h2>
+          <p>Country Updates</p>
+        </div>
+        
+          <div class="icon-box" data-aos="zoom-in-left" style="background-color: rgb(241, 241, 241);">
+            <form id="myForm">
+              <input type="text" id="country" placeholder="Enter a country" required style="font-size: x-large;">
+              <input type="submit" value="Search" style="font-size: x-large;background-color: rgb(2, 1, 75);color: silver;">
+            </form>
+            
+            
+          </div>
+          <br>
+          <br>
+          <br>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+              <div class="icon-box" data-aos="zoom-in-left" style="background-color: rgb(100, 255, 52);">
+                
+                <h4 class="title"><a href="">Country</a></h4>
+                <p class="description" id="coun"></p>
+              </div>
+            </div>
+
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="icon-box" data-aos="zoom-in-left" style="background-color: darkturquoise;">
+                
+                <h4 class="title"><a href="">Active Cases</a></h4>
+                <p class="description" id="active"></p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5 mt-md-0" >
+              <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="100"style="background-color: gold;">
+                
+                <h4 class="title"><a href="">Confirmed Cases</a></h4>
+                <p class="description" id="confirmed"></p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 " >
+              <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200" style="background-color: greenyellow;">
+                
+                <h4 class="title"><a href="">Total Recovered</a></h4>
+                <p class="description" id="recovered"></p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5">
+              <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="300" style="background-color: red;">
+                
+                <h4 class="title"><a href="">Total Deaths</a></h4>
+                <p class="description" id="deaths"></p>
+              </div>
+            </div>
+          </div>
+            
+        
+        
+
+        
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Indian State Tracker </h2>
+          <p></p>
+        </div>
+
+        
+
+            
+
+            
+
+            
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                 The states codes of all the states are given below in the table. Refer to this table and search for a state. Make sure that you enter the State Code in Capital Letters.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="state codes.bmp" class="testimonial-img" alt="">
+                
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="container">
+        <div class="icon-box" data-aos="zoom-in-left" style="background-color: rgb(241, 241, 241);">
+          <form id="myForm2">
+            <input type="text" id="state" placeholder="Enter state code" required style="font-size: x-large;">
+            <input type="submit" value="Search" style="font-size: x-large;background-color: rgb(2, 1, 75);color: silver;">
+          </form>
+          
+          
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+            <div class="icon-box" data-aos="zoom-in-left" style="background-color: rgb(100, 255, 52);">
+              
+              <h4 class="title"><a href="">State code</a></h4>
+              <p class="description" id="state2"></p>
+            </div>
+          </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="zoom-in-left" style="background-color: darkturquoise;">
+              
+              <h4 class="title"><a href="">Total Confirmed</a></h4>
+              <p class="description" id="confirmed2"></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5 mt-md-0" >
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="100"style="background-color: gold;">
+              
+              <h4 class="title"><a href="">Total Deaths</a></h4>
+              <p class="description" id="deaths2"></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 " >
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200" style="background-color: greenyellow;">
+              
+              <h4 class="title"><a href="">Total Recovered</a></h4>
+              <p class="description" id="recovered2"></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="300" style="background-color: red;">
+              
+              <h4 class="title"><a href="">Total Vaccinated</a></h4>
+              <p class="description" id="vaccinated"></p>
+            </div>
+          </div>
+        </div>
+          
+      
+      </div>
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Save Yourself From Coronavirus</h2>
+          <p>Follow these basic precautions:</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="box" data-aos="zoom-in">
+              <h3>Follow local guidance</h3>
+              
+              <ul>
+                <li>Check to see what national, regional and local authorities are advising so you have the most relevant information for where you are.</li>
+                
+                
+              </ul>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+            <div class="box " data-aos="zoom-in" >
+              <h3>Keep your distance</h3>
+              
+              <ul>
+                <li> Stay at least 1 metre away from others, even if they don’t appear to be sick, since people can have the virus without having symptoms.</li>
+                
+              </ul>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="200">
+              <h3>Wear a mask</h3>
+              
+              <ul>
+                <li>Wear a well-fitting three-layer mask, especially when you can’t physically distance, or if you’re indoors. Clean your hands before putting on and taking off a mask.</li>
+                
+              </ul>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="300">
+              
+              <h3>Get vaccinated</h3>
+              
+              <ul>
+                <li>When it’s your turn, get vaccinated. Follow local guidance and recommendations about vaccination.</li>
+                
+              </ul>
+              
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    
+
+    
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/selecao-bootstrap-template/ -->
+        Designed by Aini
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+<script>
+  var url="https://api.covid19api.com/summary"
+      fetch(url)
+      .then((res)=>res.json())
+      .then((res)=> {
+        console.log(res)
+        var NewConfirmed=document.getElementById('NewConfirmed')
+        var TotalConfirmed=document.getElementById('TotalConfirmed')
+        var NewDeaths=document.getElementById('NewDeaths')
+        var TotalDeaths=document.getElementById('TotalDeaths')
+        var NewRecovered=document.getElementById('NewRecovered')
+        var TotalRecovered=document.getElementById('TotalRecovered')
+        NewConfirmed.append(res.Global.NewConfirmed)
+        TotalConfirmed.append(res.Global.TotalConfirmed)
+        NewDeaths.append(res.Global.NewDeaths)
+        TotalDeaths.append(res.Global.TotalDeaths)
+        NewRecovered.append(res.Global.NewRecovered)
+        TotalRecovered.append(res.Global.TotalRecovered)
+      }
+      )
+      var myForm=document.getElementById('myForm')
+  myForm.addEventListener('submit',function(e){
+      e.preventDefault()
+      var country=document.getElementById('country').value
+      
+      var url2="https://api.covid19api.com/total/dayone/country/"+country
+      fetch(url2)
+      .then((res)=>res.json())
+      .then((res)=> {
+          var length=res.length
+          var index=length-1
+          
+          var confirmed=document.getElementById('confirmed')
+          var recovered=document.getElementById('recovered')
+          var deaths=document.getElementById('deaths')
+          coun.innerHTML=''
+          active.innerHTML=''
+          confirmed.innerHTML=''
+          recovered.innerHTML=''
+          deaths.innerHTML=''
+          coun.append(country)
+          active.append(res[index].Active)
+          confirmed.append(res[index].Confirmed)
+          recovered.append(res[index].Recovered)
+          deaths.append(res[index].Deaths)
+        })
+
+})
+
+var myForm2=document.getElementById('myForm2')
+      myForm2.addEventListener('submit',function(e){
+          e.preventDefault()
+          var state=document.getElementById('state').value
+          
+          var url3="https://api.covid19india.org/v4/min/data.min.json"
+          fetch(url3)
+          .then((res)=>res.json())
+          .then((res)=> {
+              console.log(res)
+              var state2=document.getElementById('state2')
+             
+              var confirmed2=document.getElementById('confirmed2')
+              var deaths2=document.getElementById('deaths2')
+              var recovered2=document.getElementById('recovered2')
+              
+              var vaccinated=document.getElementById('vaccinated')
+              
+              state2.innerHTML=''
+              confirmed2.innerHTML=''
+              deaths2.innerHTML=''
+              recovered2.innerHTML=''
+              
+              vaccinated.innerHTML=''
+              
+              state2.append(state)
+              confirmed2.append(res[state].delta7.confirmed)
+              deaths2.append(res[state].delta7.deceased)
+              recovered2.append(res[state].delta7.recovered)
+              
+              vaccinated.append(res[state].delta7.vaccinated)
+            })
+    
+  })
+      
+
+</script>
+
+</html>
